@@ -1,0 +1,209 @@
+# original work arrays to process the archived data with uvotlogtool.py 
+#
+# V Grism standards observed before 2013-03-19, organised from faint to bright 
+#
+# set 167 wheelpos=940, 192 wheelpos=960, 144 wheelpos=950,  all deleted
+# 
+vgrism_obs = dict(  \
+set66=dict(obsid='00054001006',wheelpos=955,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1180.5,roll= 40.7,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set05=dict(obsid='00055250071',wheelpos=955,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 834.8,roll=302.3,groups=[''],name='WD1121+145',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set06=dict(obsid='00055250071',wheelpos=955,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 884.8,roll=302.3,groups=[''],name='WD1121+145',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set01=dict(obsid='00055250072',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 286.8,roll=299.5,groups=[''],name='WD1121+145',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set02=dict(obsid='00055250072',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=  80.9,roll=299.5,groups=[''],name='WD1121+145',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set03=dict(obsid='00055250072',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 357.3,roll=299.5,groups=[''],name='WD1121+145',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set04=dict(obsid='00055250072',wheelpos=0000,ext=4,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 305.3,roll=299.5,groups=[''],name='WD1121+145',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set07=dict(obsid='00055250073',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 702.9,roll=299.5,groups=[''],name='WD1121+145',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set08=dict(obsid='00055250073',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 674.5,roll=299.5,groups=[''],name='WD1121+145',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set09=dict(obsid='00055250073',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 583.9,roll=299.5,groups=[''],name='WD1121+145',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set10=dict(obsid='00055900054',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 575.4,roll= 31.0,groups=[''],name='WD1657+343',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set11=dict(obsid='00055900056',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 278.0,roll= 17.0,groups=[''],name='WD1657+343',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set12=dict(obsid='00055900056',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 277.1,roll= 17.0,groups=[''],name='WD1657+343',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set13=dict(obsid='00055900053',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 472.4,roll= 31.0,groups=[''],name='WD1657+343',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set14=dict(obsid='00055900053',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 442.7,roll= 31.0,groups=[''],name='WD1657+343',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set15=dict(obsid='00055900053',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 472.8,roll= 31.0,groups=[''],name='WD1657+343',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set16=dict(obsid='00056760003',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 625.6,roll= 59.4,groups=[''],name='P177D',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set17=dict(obsid='00056760001',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 611.2,roll= 58.2,groups=[''],name='P177D',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set18=dict(obsid='00056760015',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 997.6,roll= 55.3,groups=[''],name='P177D',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set19=dict(obsid='00056770014',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 404.4,roll= 66.8,groups=[''],name='P330E',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set20=dict(obsid='00056770016',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 998.0,roll= 65.8,groups=[''],name='P330E',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set21=dict(obsid='00055200026',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1434.8,roll=220.0,groups=[''],name='WD1057+719',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set22=dict(obsid='00055200024',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1434.8,roll=220.0,groups=[''],name='WD1057+719',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set23=dict(obsid='00054002001',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 489.9,roll=341.2,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set24=dict(obsid='00054002001',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 524.2,roll=341.2,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set25=dict(obsid='00054002001',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 500.1,roll=341.2,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set26=dict(obsid='00054002001',wheelpos=0000,ext=4,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 465.6,roll=341.2,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set27=dict(obsid='00054004001',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 472.8,roll=341.3,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set28=dict(obsid='00054004001',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 327.5,roll=341.3,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set29=dict(obsid='00054004004',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1178.8,roll= 40.9,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set30=dict(obsid='00054002004',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1120.4,roll= 40.9,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set31=dict(obsid='00054002006',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1417.0,roll=185.6,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set32=dict(obsid='00054004006',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1297.6,roll=185.5,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set33=dict(obsid='00054000002',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 193.1,roll=341.2,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set34=dict(obsid='00054000002',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=  47.2,roll=341.2,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set35=dict(obsid='00054000021',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 518.6,roll=347.2,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set36=dict(obsid='00054000021',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 470.9,roll=347.2,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set37=dict(obsid='00054000021',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 518.1,roll=347.2,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set38=dict(obsid='00054000021',wheelpos=0000,ext=4,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 518.2,roll=347.2,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set39=dict(obsid='00054000017',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 398.2,roll=342.9,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set40=dict(obsid='00054000017',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 517.9,roll=342.9,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set41=dict(obsid='00054000017',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 366.1,roll=342.9,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set42=dict(obsid='00054000017',wheelpos=0000,ext=4,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 458.7,roll=342.9,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set43=dict(obsid='00054000017',wheelpos=0000,ext=5,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 458.2,roll=342.9,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set44=dict(obsid='00054000026',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1484.8,roll=100.0,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set45=dict(obsid='00054000013',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1357.5,roll=185.7,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set46=dict(obsid='00054000013',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1298.5,roll=185.7,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set47=dict(obsid='00054000009',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 520.0,roll=349.5,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set48=dict(obsid='00054000009',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 460.2,roll=349.5,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set49=dict(obsid='00054000009',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 460.2,roll=349.5,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set50=dict(obsid='00054000009',wheelpos=0000,ext=4,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 339.5,roll=349.5,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set51=dict(obsid='00054000001',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 340.6,roll=341.2,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set52=dict(obsid='00054000001',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 460.3,roll=341.2,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set53=dict(obsid='00054000028',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1434.8,roll=108.0,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set54=dict(obsid='00054000015',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 577.5,roll=221.2,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set55=dict(obsid='00054000015',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 577.6,roll=221.2,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set56=dict(obsid='00054000015',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 937.3,roll=221.2,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set57=dict(obsid='00054000018',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 477.4,roll=344.8,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set58=dict(obsid='00054000018',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 468.3,roll=344.8,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set59=dict(obsid='00054000018',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 498.5,roll=344.8,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set60=dict(obsid='00054000018',wheelpos=0000,ext=4,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 464.2,roll=344.8,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set61=dict(obsid='00054001001',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 202.2,roll=341.0,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set62=dict(obsid='00054001001',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=  56.7,roll=341.0,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set63=dict(obsid='00054001001',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 517.7,roll=341.0,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set64=dict(obsid='00054003001',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 482.3,roll=341.1,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set65=dict(obsid='00054003001',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 517.1,roll=341.1,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set66=dict(obsid='00054001006',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1180.5,roll= 40.7,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set67=dict(obsid='00054003004',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 999.3,roll= 40.7,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set68=dict(obsid='00054001008',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1298.2,roll=184.1,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set69=dict(obsid='00054001004',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 439.1,roll=349.4,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set70=dict(obsid='00054003006',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1418.0,roll=185.1,groups=[''],name='BPM16274',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set71=dict(obsid='00056204007',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1417.3,roll=225.1,groups=[''],name='LTT9491',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set72=dict(obsid='00056204007',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1418.4,roll=225.1,groups=[''],name='LTT9491',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set73=dict(obsid='00056204007',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1418.4,roll=225.1,groups=[''],name='LTT9491',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set74=dict(obsid='00056204007',wheelpos=0000,ext=4,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1418.3,roll=225.1,groups=[''],name='LTT9491',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set75=dict(obsid='00056204007',wheelpos=0000,ext=5,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1358.4,roll=225.1,groups=[''],name='LTT9491',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set76=dict(obsid='00056202005',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=  26.5,roll=225.0,groups=[''],name='LTT9491',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set77=dict(obsid='00056202005',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1358.5,roll=225.0,groups=[''],name='LTT9491',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set78=dict(obsid='00056202005',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1297.7,roll=225.0,groups=[''],name='LTT9491',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set79=dict(obsid='00056202005',wheelpos=0000,ext=4,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1358.7,roll=225.0,groups=[''],name='LTT9491',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set80=dict(obsid='00056202007',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 398.4,roll=228.4,groups=[''],name='LTT9491',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set81=dict(obsid='00056202007',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 458.4,roll=228.4,groups=[''],name='LTT9491',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set82=dict(obsid='00056202003',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1177.9,roll= 70.4,groups=[''],name='LTT9491',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set83=dict(obsid='00056200003',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1177.3,roll= 70.4,groups=[''],name='LTT9491',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set84=dict(obsid='00056200007',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 998.1,roll=224.9,groups=[''],name='LTT9491',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set85=dict(obsid='00056203011',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1057.6,roll=225.2,groups=[''],name='LTT9491',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set86=dict(obsid='00056203009',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1297.7,roll=223.6,groups=[''],name='LTT9491',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set87=dict(obsid='00056203009',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1418.4,roll=223.6,groups=[''],name='LTT9491',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set88=dict(obsid='00056203009',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1358.0,roll=223.6,groups=[''],name='LTT9491',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set89=dict(obsid='00056203009',wheelpos=0000,ext=4,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1418.8,roll=223.6,groups=[''],name='LTT9491',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set90=dict(obsid='00056203009',wheelpos=0000,ext=5,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 998.2,roll=223.6,groups=[''],name='LTT9491',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set91=dict(obsid='00056201003',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1178.4,roll= 70.4,groups=[''],name='LTT9491',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set92=dict(obsid='00054304007',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 997.2,roll= 95.4,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set93=dict(obsid='00054302008',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 997.2,roll= 95.9,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set94=dict(obsid='00054302006',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 634.3,roll= 97.4,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set95=dict(obsid='00054302006',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 624.3,roll= 97.4,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set96=dict(obsid='00054302006',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 814.5,roll= 97.4,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set97=dict(obsid='00054302006',wheelpos=0000,ext=4,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 814.0,roll= 97.4,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set98=dict(obsid='00054302006',wheelpos=0000,ext=5,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 814.0,roll= 97.4,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set99=dict(obsid='00054304005',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 610.6,roll= 97.6,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set100=dict(obsid='00054302004',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 937.8,roll=119.6,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set101=dict(obsid='00054302004',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 997.6,roll=119.6,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set102=dict(obsid='00054302004',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 937.3,roll=119.6,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set103=dict(obsid='00054302004',wheelpos=0000,ext=4,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 997.6,roll=119.6,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set104=dict(obsid='00054302004',wheelpos=0000,ext=5,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 937.8,roll=119.6,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set105=dict(obsid='00054300023',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 937.7,roll= 94.5,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set106=dict(obsid='00054300013',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1298.1,roll= 58.1,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set107=dict(obsid='00054300002',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 643.9,roll=272.1,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set108=dict(obsid='00054300002',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 921.2,roll=272.1,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set109=dict(obsid='00054300002',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 867.9,roll=272.1,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set110=dict(obsid='00054300002',wheelpos=0000,ext=4,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 680.1,roll=272.1,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set111=dict(obsid='00054300002',wheelpos=0000,ext=5,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 748.4,roll=272.1,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set112=dict(obsid='00054300011',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1178.2,roll= 58.1,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set113=dict(obsid='00054300015',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1298.2,roll= 58.1,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set114=dict(obsid='00054300009',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 760.6,roll=272.9,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set115=dict(obsid='00054300009',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 760.2,roll=272.9,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set116=dict(obsid='00054300009',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 760.6,roll=272.9,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set117=dict(obsid='00054300009',wheelpos=0000,ext=4,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 759.6,roll=272.9,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set118=dict(obsid='00054300009',wheelpos=0000,ext=5,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 760.2,roll=272.9,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set119=dict(obsid='00054300020',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 800.0,roll= 87.0,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set120=dict(obsid='00054300020',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 888.5,roll= 87.0,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set121=dict(obsid='00054300020',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 560.4,roll= 87.0,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set122=dict(obsid='00054300020',wheelpos=0000,ext=4,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 399.4,roll= 87.0,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set123=dict(obsid='00054300020',wheelpos=0000,ext=5,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=  96.9,roll= 87.0,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set124=dict(obsid='00054300019',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 553.6,roll= 99.6,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set125=dict(obsid='00054300019',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 527.2,roll= 99.6,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set126=dict(obsid='00054303007',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 997.3,roll= 96.0,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set127=dict(obsid='00054303007',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 996.6,roll= 96.0,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set128=dict(obsid='00054303005',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 814.1,roll= 95.5,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set129=dict(obsid='00054303005',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 755.1,roll= 95.5,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set130=dict(obsid='00054303005',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 814.5,roll= 95.5,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set131=dict(obsid='00054303005',wheelpos=0000,ext=4,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 518.0,roll= 95.5,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set132=dict(obsid='00054301007',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 938.3,roll=117.7,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set133=dict(obsid='00054301007',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 998.3,roll=117.7,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set134=dict(obsid='00054301007',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 938.7,roll=117.7,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set135=dict(obsid='00054301007',wheelpos=0000,ext=4,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 998.3,roll=117.7,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set136=dict(obsid='00054301007',wheelpos=0000,ext=5,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 938.3,roll=117.7,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set137=dict(obsid='00054301002',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 879.5,roll=268.5,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set138=dict(obsid='00054301002',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1119.8,roll=268.5,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set139=dict(obsid='00054301002',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 879.4,roll=268.5,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set140=dict(obsid='00054301002',wheelpos=0000,ext=4,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1120.0,roll=268.5,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set141=dict(obsid='00054303003',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 998.2,roll=117.2,groups=[''],name='GD50',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set142=dict(obsid='00055050017',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 684.7,roll=222.0,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set143=dict(obsid='00055050016',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=  84.3,roll=222.0,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+#set144=dict(obsid='00055050016',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 578.5,roll=222.0,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='wheelpos=950',),\
+set145=dict(obsid='00055054004',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1136.6,roll=242.8,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set146=dict(obsid='00055052003',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1152.9,roll=243.0,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set147=dict(obsid='00055052004',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1152.7,roll=243.0,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set148=dict(obsid='00055054003',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1152.2,roll=242.8,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set149=dict(obsid='00055050018',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=  91.9,roll=221.2,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set150=dict(obsid='00055050018',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=  91.4,roll=221.2,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set151=dict(obsid='00055050013',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=  86.9,roll=228.9,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+#set152=dict(obsid='00055050013',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1200.0,roll=228.9,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='wheelpos=960',),\
+set153=dict(obsid='00055050012',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=  87.4,roll=228.9,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+#set154=dict(obsid='00055050012',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1200.0,roll=228.9,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='wheelpos=970',),\
+set155=dict(obsid='00055050031',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1415.9,roll= 96.7,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set156=dict(obsid='00055050031',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1355.9,roll= 96.7,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set157=dict(obsid='00055050029',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 697.2,roll=109.3,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set158=dict(obsid='00055050029',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 758.6,roll=109.3,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set159=dict(obsid='00055050029',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 758.7,roll=109.3,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set160=dict(obsid='00055050029',wheelpos=0000,ext=4,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 758.6,roll=109.3,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set161=dict(obsid='00055050026',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 520.6,roll=251.1,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set162=dict(obsid='00055050026',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 700.3,roll=251.1,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set163=dict(obsid='00055050020',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=  77.0,roll=221.2,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set164=dict(obsid='00055050020',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1200.0,roll=221.2,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set165=dict(obsid='00055050021',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1167.7,roll=244.9,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set166=dict(obsid='00055050019',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 442.8,roll=221.2,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+#set167=dict(obsid='00055050019',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 972.2,roll=221.2,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='wheelpos=940',),\
+set168=dict(obsid='00055051008',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1297.8,roll= 97.1,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set169=dict(obsid='00055051003',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1136.6,roll=242.9,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set170=dict(obsid='00055051004',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1152.6,roll=242.9,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set171=dict(obsid='00055053003',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1152.2,roll=242.7,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set172=dict(obsid='00055053004',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1153.1,roll=242.7,groups=[''],name='GD108',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set173=dict(obsid='00055502004',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1018.7,roll=  9.7,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set174=dict(obsid='00055504012',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1780.6,roll=  2.2,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set175=dict(obsid='00055502008',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1779.7,roll=  2.2,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set176=dict(obsid='00055504006',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1780.2,roll=  2.2,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set177=dict(obsid='00055504002',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1359.9,roll=  9.7,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set178=dict(obsid='00055504008',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1780.7,roll=  2.2,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set179=dict(obsid='00055504010',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 161.4,roll=  2.2,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set180=dict(obsid='00055504014',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 921.3,roll=314.6,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set181=dict(obsid='00055502001',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1179.7,roll= 41.0,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set182=dict(obsid='00055502001',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1150.2,roll= 41.0,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set183=dict(obsid='00055500001',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1180.2,roll= 38.1,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set184=dict(obsid='00055500001',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1150.6,roll= 38.1,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set185=dict(obsid='00055500001',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1151.1,roll= 38.1,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set186=dict(obsid='00055500001',wheelpos=0000,ext=4,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1150.0,roll= 38.1,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set187=dict(obsid='00055500001',wheelpos=0000,ext=5,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1410.8,roll= 38.1,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set188=dict(obsid='00055503005',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1194.4,roll=  9.7,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set189=dict(obsid='00055501004',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1062.6,roll=  9.7,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set190=dict(obsid='00055503002',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1060.6,roll=  9.7,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set191=dict(obsid='00055503020',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure= 988.2,roll=314.6,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set192=dict(obsid='00055503023',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1278.5,roll=299.9,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set193=dict(obsid='00055503023',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1218.6,roll=299.9,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set194=dict(obsid='00055503023',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1355.1,roll=299.9,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set195=dict(obsid='00055503023',wheelpos=0000,ext=4,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1237.8,roll=299.9,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set196=dict(obsid='00055501001',wheelpos=0000,ext=1,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1150.5,roll= 39.1,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set197=dict(obsid='00055501001',wheelpos=0000,ext=2,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1151.6,roll= 39.1,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set198=dict(obsid='00055501001',wheelpos=0000,ext=3,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1151.6,roll= 39.1,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set199=dict(obsid='00055501001',wheelpos=0000,ext=4,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1151.6,roll= 39.1,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+set200=dict(obsid='00055501001',wheelpos=0000,ext=5,anchor=[0000.,0000.],dateobs='2001-01-01',exposure=1151.0,roll= 39.1,groups=[''],name='GD153',nproc=0,wlshift=0.0,exclude=[[]],notes='',),\
+)
